@@ -1,5 +1,5 @@
 from flask import Flask
-from amazon.products.views import blueprint
+from amazon import product
 from amazon.settings import ProdConfig
 
 print(__name__)
@@ -12,4 +12,4 @@ def create_app(config=ProdConfig):
 
 
 def register_bluprints(app):
-    app.register_blueprint(blueprint, url_prefix='/products')
+    app.register_blueprint(product.views.blueprint, url_prefix='/products')

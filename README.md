@@ -66,3 +66,17 @@ Amazon Clone
 	9.Push Docker image to DockerHub.
 	10.Deploy Docker image to Heroku.
 	11.Set up Travis CI to automatically run all tests, create a Docker image, push the image to DockerHub, and Deploy Docker to live servers on Heroku. This process will be done automatically for each commit to our GitHub repository.
+
+#### pipenv environment variables
+
+``` console
+set PIPENV_VENV_IN_PROJECT 1
+```
+
+#### To run application
+
+``` console
+set FLASK_DEBUG 1
+set FLASK_APP <aoutapp.py absolute path>
+
+```

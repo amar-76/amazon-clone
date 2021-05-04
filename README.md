@@ -77,6 +77,6 @@ set PIPENV_VENV_IN_PROJECT 1
 
 ``` console
 set FLASK_DEBUG 1
-set FLASK_APP <aoutapp.py absolute path>
+set FLASK_APP <autoapp.py absolute path>
 
 ```

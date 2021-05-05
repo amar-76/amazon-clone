@@ -2,7 +2,27 @@
 
 {% extends "home.html" %}
 {% block maincontent %}
-   products list
+<div class="products"> 
+   {% for product in prods %}
+     <div class="product">
+        <div class="product__info">
+            <p>{{product.name}}</p>
+            <small>Rs</small>
+            <strong>{{product.price}}</strong>
+            <div class="product__rating">
+               <p>*</p>
+               <p>*</p>
+               <p>*</p>
+               <p>*</p>
+            </div>
+        </div>
+        <img class="product__image"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Desktop_QC_tile_graphic_186x116_2._SY116_CB414480869_.jpg">
+            <button>Add to Basket</button>
+     </div>
+   {% endfor %}
+   </div>
+
 {% endblock %}
 
 

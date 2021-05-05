@@ -3,7 +3,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('AMAZON_CLONE_SECRET', 'secret-key')
     # this directory
     APP_DIR = os.path.abspath(os.path.dirname(__file__))
-    PROJECT_ROOT = os.path.abspath(os.path.join(APP_DIR), os.pardir)
+    PROJECT_ROOT = os.path.abspath(os.path.join(APP_DIR, os.pardir))
 
 
 # always store sensitive info in env variable
